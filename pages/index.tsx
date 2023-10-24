@@ -10,6 +10,8 @@ export default function Home() {
       <div id='stars2'></div>
       <div id='stars3'></div>
       <TitleSVG/>
+      <p> hello everyone CAN YOU SEE THIS PLEASE PLEASE PLEASE </p>
+      
     </main>
   )
 }
