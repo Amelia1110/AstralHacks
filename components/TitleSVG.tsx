@@ -7,9 +7,9 @@ interface LogoProps {
 export default function Logo(props: LogoProps) {
   return (
     <main className="w-screen h-screen grid place-content-center">
-    <div className="h-20">
+    <div>
     <motion.svg
-      width="100%"
+      width="1000"
       height="100%"
       fill="none"
       viewBox="0 0 818.897 60.232"
