@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <>
     <header>
-
     </header>
     <main>
       <div id='stars'></div>
@@ -13,7 +12,7 @@ export default function Home() {
 
       <TitleSVG/>
       <p className ="text-gray-50"> hello everyone CAN YOU SEE THIS PLEASE PLEASE PLEASE </p>
-
+      
       <button className="bg-sky-500 hover:bg-sky-700"> $500 yummy yummy </button>
 
     </main>
