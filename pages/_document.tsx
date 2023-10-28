@@ -1,13 +1,13 @@
-import Header from '@/components/header'
+import Navbar from '@/components/Navbar'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head title="Astral Hacks"/>
+      <Head/>
       <body>
         <header>
-          <Header />
+          <Navbar />
         </header>
         <Main />
         <NextScript />

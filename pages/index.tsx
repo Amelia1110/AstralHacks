@@ -2,9 +2,6 @@ import TitleSVG from '@/components/TitleSVG'
 
 export default function Home() {
   return (
-    <>
-    <header>
-    </header>
     <main>
       <div id='stars'></div>
       <div id='stars2'></div>
@@ -16,6 +13,5 @@ export default function Home() {
       <button className="bg-sky-500 hover:bg-sky-700"> $500 yummy yummy </button>
 
     </main>
-    </>
-  ); 
+  )
 }
