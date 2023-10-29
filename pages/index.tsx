@@ -1,5 +1,4 @@
 import TitleSVG from '@/components/TitleSVG'
-
 export default function Home() {
   return (
     <main>
