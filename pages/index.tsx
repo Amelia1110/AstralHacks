@@ -7,6 +7,9 @@ export default function Home() {
       <div id='stars2'></div>
       <div id='stars3'></div>
       <TitleSVG/>
+      <p>
+        Hi guys :D:D:D:D::D:D:D:D::D:D:D::DD
+      </p>
     </main>
   )
 }
