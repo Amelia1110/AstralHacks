@@ -9,7 +9,7 @@ export default function Home() {
       <TitleSVG/>
       <p>
         WOJDKLSJFLK
-        HIIIIIIIIIII
+        Hello
       </p>
     </main>
   )
