@@ -14,7 +14,6 @@ export default function Navbar () {
                     <a href="#"> {link}</a>
                 </li>
             ))}
-
         </ul>
     </nav>
     );
