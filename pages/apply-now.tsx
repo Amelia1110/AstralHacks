@@ -9,7 +9,7 @@ const majorMonoDisplay = Major_Mono_Display({
 export default function ApplyNow() {
     return (
         <main className="grid place-content-center">
-            <h1 className={`${majorMonoDisplay.variable} font-heading text-white text-6xl`}>Apply Now</h1>
+            <h1 className={`${majorMonoDisplay.variable} font-heading text-white text-6xl`}>Apply now</h1>
         </main>
     )
 }
