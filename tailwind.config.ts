@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         heading: ['var(--font-major_mono_display)'],
-        text: ['var(--font-roboto-mono)'],
+        text: ['var(--font-raleway)'],
       },
     },
   },
