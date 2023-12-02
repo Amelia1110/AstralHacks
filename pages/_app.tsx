@@ -8,17 +8,16 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Astral Hacks</title>
+      </Head>
         <header>
           <Navbar/>
         </header> 
         <main>
-          {/*
           <div id='stars'></div>
           <div id='stars2'></div>
           <div id='stars3'></div>
-  */}
         </main>
-      </Head>
+
       <Component {...pageProps} />
     </>
   )
