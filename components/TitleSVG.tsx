@@ -8,7 +8,7 @@ export default function Logo() {
       width="1000"
       height="100%"
       fill="none"
-      viewBox="0 0 818.897 60.232"
+      viewBox="-1 -1 820.897 62.232"
       xmlns="http://www.w3.org/2000/svg"
     >
       <motion.path
