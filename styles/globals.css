@@ -5,12 +5,13 @@
 /* Link for the html: https://codepen.io/sarazond/pen/LYGbwj (compiled sass) */
 
 html {
-  height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+  background-color: #090a0f;
+  background-attachment: fixed;
 }
 
 #stars {
+  overflow: hidden;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -18,6 +19,7 @@ html {
   animation: animStar 50s linear infinite;
 }
 #stars:after {
+  overflow: hidden;
   content: " ";
   position: absolute;
   top: 2000px;
@@ -28,6 +30,7 @@ html {
 }
 
 #stars2 {
+  overflow: hidden;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -35,6 +38,7 @@ html {
   animation: animStar 100s linear infinite;
 }
 #stars2:after {
+  overflow: hidden;
   content: " ";
   position: absolute;
   top: 2000px;
@@ -45,6 +49,7 @@ html {
 }
 
 #stars3 {
+  overflow: hidden;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -52,6 +57,7 @@ html {
   animation: animStar 150s linear infinite;
 }
 #stars3:after {
+  overflow: hidden;
   content: " ";
   position: absolute;
   top: 2000px;
@@ -61,7 +67,6 @@ html {
   box-shadow: 106px 1621px #FFF , 1731px 536px #FFF , 273px 18px #FFF , 533px 753px #FFF , 270px 1986px #FFF , 223px 1541px #FFF , 504px 345px #FFF , 944px 1538px #FFF , 43px 552px #FFF , 1659px 1091px #FFF , 569px 961px #FFF , 675px 1284px #FFF , 1628px 1115px #FFF , 1263px 140px #FFF , 1747px 1521px #FFF , 1146px 1979px #FFF , 1811px 1287px #FFF , 1633px 144px #FFF , 1432px 744px #FFF , 92px 1424px #FFF , 943px 397px #FFF , 1036px 41px #FFF , 217px 1683px #FFF , 2px 980px #FFF , 1033px 1874px #FFF , 1424px 1006px #FFF , 158px 560px #FFF , 1372px 1155px #FFF , 1552px 1880px #FFF , 947px 668px #FFF , 1466px 632px #FFF , 1412px 1854px #FFF , 1028px 1872px #FFF , 1006px 772px #FFF , 1517px 884px #FFF , 1357px 1220px #FFF , 1694px 1734px #FFF , 353px 736px #FFF , 466px 17px #FFF , 800px 1288px #FFF , 770px 253px #FFF , 638px 39px #FFF , 1053px 500px #FFF , 1682px 1421px #FFF , 129px 971px #FFF , 389px 1122px #FFF , 1041px 1751px #FFF , 1761px 537px #FFF , 1175px 1133px #FFF , 39px 1163px #FFF , 1256px 1003px #FFF , 1472px 599px #FFF , 8px 108px #FFF , 379px 558px #FFF , 1512px 1860px #FFF , 1109px 1585px #FFF , 527px 258px #FFF , 1934px 1780px #FFF , 727px 1639px #FFF , 1095px 1987px #FFF , 1883px 1107px #FFF , 1089px 826px #FFF , 1155px 1321px #FFF , 1496px 1733px #FFF , 53px 1065px #FFF , 571px 991px #FFF , 356px 407px #FFF , 1534px 1844px #FFF , 1067px 877px #FFF , 80px 1165px #FFF , 1628px 946px #FFF , 91px 742px #FFF , 1926px 1468px #FFF , 867px 1134px #FFF , 1129px 1467px #FFF , 353px 411px #FFF , 719px 1317px #FFF , 110px 546px #FFF , 1161px 739px #FFF , 1326px 1638px #FFF , 1137px 1559px #FFF , 1042px 123px #FFF , 1070px 855px #FFF , 800px 1060px #FFF , 1522px 1311px #FFF , 1913px 148px #FFF , 1955px 79px #FFF , 1652px 792px #FFF , 1766px 734px #FFF , 413px 1891px #FFF , 1859px 1798px #FFF , 1026px 1666px #FFF , 193px 1657px #FFF , 473px 576px #FFF , 595px 774px #FFF , 998px 566px #FFF , 1942px 970px #FFF , 1545px 1185px #FFF , 1779px 1098px #FFF , 707px 1007px #FFF;
 }
 
-/* TODO: This is the cause of the refresh problem */
 @keyframes animStar {
   from {
     transform: translateY(0px);
