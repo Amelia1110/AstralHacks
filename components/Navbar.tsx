@@ -27,9 +27,9 @@ export default function Navbar() {
     return (
         <nav className="flex justify-between items-center h-20 p-10">
             <Link href="/" className={`${majorMonoDisplay.variable} font-heading text-white drop-shadow-md`}>
-                <Image src="/AstralHacksLogoWhite.png" alt="Logo" width={100} height={100} className="inline-flex" /> </Link>
+                <Image src="/AstralHacksLogoWhite.png" alt="Logo" width={80} height={80} className="inline-flex" /> </Link>
  
-            <ul className={`${raleway.variable} font-text text-5xl flex justify-start gap-6 list-none text-white drop-shadow-md`}>
+            <ul className={`${raleway.variable} font-text text-xl flex justify-start gap-6 list-none text-white drop-shadow-md`}>
                 {links.map((link) => (
                     <li key={link.title}>
                         <Link href={`/${link.route}`}>{link.title}</Link>
