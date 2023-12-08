@@ -20,7 +20,7 @@ export default function ContactUsFooter(){
     return(
         <main>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=astralhacks.info@gmail.com">
-          <div className="flex justify-center pt-2">
+          <div className="flex justify-center gap-2 pt-2">
             
             <svg xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
