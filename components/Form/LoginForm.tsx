@@ -1,3 +1,4 @@
+import router from "next/dist/client/router";
 import NavLink from "next/link";
 import { useState } from "react";
 
@@ -6,16 +7,33 @@ function redirectToSignup(){
     window.location.href = "../signup"
 }
 
-const LoginForm: React.FC = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-   
-    const handleSubmit = (e: React.FormEvent) => {
-       e.preventDefault();
-       // Your login logic here
-    };
-    
-   
+function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password })
+      });
+      if (response.ok) {
+        router.push('/dashboard');
+        console.log('Login successful');
+      } else {
+        const data = await response.json();
+        console.error('Login failed: ${data.message}');
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
+  };
+  
     return (
        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
          <div className="max-w-md w-full space-y-8">
@@ -76,6 +94,8 @@ const LoginForm: React.FC = () => {
                  </div>
                  </div>
 
-                 )}
+                 )
+  
+    }
 
 export default LoginForm
