@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "antd": "^5.9.4",
+    "bcryptjs": "^2.4.3",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
+    "mongoose": "^8.0.3",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
