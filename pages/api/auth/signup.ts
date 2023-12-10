@@ -57,6 +57,8 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
         res.status(405).json({error: "Method Not Allowed"})
         res.end()
     }
+
+    res.end()
 }
 
 export default handler

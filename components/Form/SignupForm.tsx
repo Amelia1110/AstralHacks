@@ -1,5 +1,9 @@
-import { error } from 'console';
+import { loginUser } from '@/helpers';
+import axios, { AxiosError } from 'axios';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+
+
 
 
 const SignUpForm = () => {
@@ -15,7 +19,10 @@ const SignUpForm = () => {
  };
 
  const [errorMsg, setErrorMsg] = useState('')
- const validateData = () => {
+ const [submitError, setSubmitError] = useState<string>("")
+ const [loading, setLoading] = useState(false)
+ const router = useRouter()
+ const validateData = ():boolean => {
     
     if (formData.password.length < 6) {
       setErrorMsg("*Password is too short (< 6 digits)");
@@ -35,9 +42,44 @@ const SignUpForm = () => {
  };
 
 
- const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
     const isValid = validateData();
+    
+    if (isValid){
+      try{
+        setLoading(true)
+        const apiRes = await axios.post("http://localhost:3000/api/auth/signup", formData)
+        
+        if (apiRes?.data?.success){
+          // save data in session
+
+          const loginRes = await loginUser({
+            email: formData.email,
+            password : formData.password,
+          })
+
+          if (loginRes && !loginRes.ok){
+            setSubmitError(loginRes.error || "")
+          }
+
+          
+          router.push("/")
+          
+        }
+
+      }catch(error:unknown){
+          if (error instanceof AxiosError){
+            const errorMsg = error.response?.data?.error
+            setSubmitError(errorMsg) 
+          }
+      }
+
+      setLoading(false)
+    }
+    
     
  };
 
@@ -123,12 +165,13 @@ const SignUpForm = () => {
         <button
           type="submit"
           className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          disabled = {loading}
         >
           Sign up
         </button>
         
         {errorMsg && <div className='pt-2 text-red-700'>{errorMsg}</div>}
-
+        {submitError && <div className='pt-2 text-red-700'> {submitError} </div>}
       </div>
     </form>
     </div>
