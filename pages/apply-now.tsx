@@ -1,4 +1,8 @@
+import axios from 'axios';
+import { log } from 'console';
 import { Major_Mono_Display } from 'next/font/google';
+import LoginForm from '@/components/Form/LoginForm';
+
 
 const majorMonoDisplay = Major_Mono_Display({
   subsets: ['latin'],
@@ -6,10 +10,13 @@ const majorMonoDisplay = Major_Mono_Display({
   weight: '400'
 })
 
-export default function ApplyNow() {
-    return (
-        <main className="grid place-content-center">
-            <h1 className={`${majorMonoDisplay.variable} font-heading text-white text-6xl`}>Apply now</h1>
-        </main>
+type Props =  {}
+
+
+const ApplyNow = (props : Props) => {
+    return(
+        <LoginForm/>
     )
 }
+
+export default ApplyNow
