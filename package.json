@@ -9,15 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/gapi": "^0.0.47",
+    "@types/gapi.auth2": "^0.0.60",
     "antd": "^5.9.4",
     "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
     "clsx": "^2.0.0",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.16.4",
+    "gapi": "^0.0.3",
+    "mongoose": "^8.0.2",
     "next": "13.5.4",
+    "next-auth": "^4.24.5",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
