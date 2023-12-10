@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { log } from 'console';
 import { Major_Mono_Display } from 'next/font/google';
 import LoginForm from '@/components/Form/LoginForm';
