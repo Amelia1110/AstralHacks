@@ -9,7 +9,7 @@ connectToMongoDB();
 
 export default async function handler(req: { method: string; body: { email: any; password: any } }, res: { status: (arg0: number) => { (): any; new(): any; end: { (): any; new(): any }; json: { (arg0: { message: string }): void; new(): any } } }) {
   if (req.method !== 'POST') {
-    return res.status(405).end(); // Method Not Allowed
+    return res.status(405).end(); 
   }
 
   const { email, password } = req.body;
@@ -20,8 +20,6 @@ export default async function handler(req: { method: string; body: { email: any;
     if (!user || user.password !== password) {
       return res.status(401).json({ message: 'Invalid credentials' });
     }
-
-    // TODO: Generate and send a token for authentication
 
     res.status(200).json({ message: 'Login successful' });
   } catch (error) {
