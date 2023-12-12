@@ -16,7 +16,6 @@ const UserProfile = () => {
                 {
                     session &&
                     <>
-
                         <div className="text-white">
                             {
                                 `Hello ${session?.user?.fullName}`
