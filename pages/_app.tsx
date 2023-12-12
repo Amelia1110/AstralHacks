@@ -1,11 +1,18 @@
 import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { SessionProvider } from 'next-auth/react'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  const router = useRouter()
+  const {pathname} = router
+
   return (
     <>
+      <SessionProvider session={pageProps.session}>
       <Head>
         <title>Astral Hacks</title>
       </Head>
@@ -19,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </main>
 
       <Component {...pageProps}/>
+      </SessionProvider>
     </>
   )
 }

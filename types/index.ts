@@ -9,3 +9,8 @@ export interface IUser{
     fullName : string;
     
 }
+
+export interface LoginUserParams{
+    email: string;
+    password: string;
+}

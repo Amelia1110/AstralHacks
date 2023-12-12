@@ -11,8 +11,8 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
     if (req.method === "POST"){
         if (!req.body) return res.status(400).json({error: "Data is missing"})
 
-        const {fullName,email,p} = req.body
-        const password = String(p)
+        const {fullName,email,password} = req.body
+        const p = String(password)
 
         const userExists = await User.findOne({email})
 
@@ -21,10 +21,10 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
         }
 
         else{
-            if (password.length < 6){
+            if (p.length < 6){
                 return res.status(409).json({error:"Password must be at least 6 digits"})
             }
-            const hashedPassword = await hash(password,12)
+            const hashedPassword = await hash(p,12)
 
             User.create({
                 fullName,
@@ -57,6 +57,8 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
         res.status(405).json({error: "Method Not Allowed"})
         res.end()
     }
+
+    res.end()
 }
 
 export default handler
