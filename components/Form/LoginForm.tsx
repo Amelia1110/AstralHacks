@@ -1,13 +1,11 @@
 import { loginUser } from "@/helpers";
 import { AxiosError } from "axios";
+import Link from "next/link";
 import NavLink from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-function redirectToSignup(){
-    event?.preventDefault();
-    window.location.href = "../signup"
-}
+
 
 
 const LoginForm: React.FC = () => {
@@ -17,12 +15,17 @@ const LoginForm: React.FC = () => {
     const [submitError, setSubmitError] = useState('');
     const router = useRouter()
 
+    function redirectToSignup(){
+      router.push("/signup")
+  }
+
     const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
       // Your login logic here
       try{
         setLoading(true)
         const loginRes = await loginUser({email, password})
+        console.log(loginRes)
 
         if (loginRes && !loginRes.ok){
           setSubmitError(loginRes.error || "")

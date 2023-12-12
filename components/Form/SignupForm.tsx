@@ -62,12 +62,12 @@ const SignUpForm = () => {
           })
 
           if (loginRes && !loginRes.ok){
+            console.log("Problemo")
             setSubmitError(loginRes.error || "")
           }
-
-          
-          router.push("/")
-          
+          else{
+            router.push("/dashboard")
+          }
         }
 
       }catch(error:unknown){

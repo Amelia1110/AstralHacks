@@ -27,10 +27,12 @@ const options: NextAuthOptions = {
                     throw new Error("Invalid Credentials")
                 }
 
+                
+
                 const isPasswordCorrect= await compare(credentials!.password, user.password)
 
                 if (!isPasswordCorrect){
-                    throw new Error("Password Incorrect")
+                    throw new Error(`Invalid Credential`)
                 }
 
                 return user
