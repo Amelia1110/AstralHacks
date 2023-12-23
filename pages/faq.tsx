@@ -11,7 +11,7 @@ export default function FAQ() {
   const isSomeActive = active.some((element) => element);
   const handleClick = () => {
     isSomeActive
-      ? setActive([false, false, false, false,false])
+      ? setActive([false, false, false, false, false])
       : setActive([true, true, true, true, true, true]);
   };
 
@@ -23,15 +23,21 @@ export default function FAQ() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='grid place-items-center w-full'>
+      <div className='grid row-start-1 place-items-center w-full'>
       <Layout
-        handleClick={handleClick}
-        isSomeActive={isSomeActive}
-        data={data}
-        turn={active}
-        setTurn={setActive}
-      />
+          handleClick={handleClick}
+          isSomeActive={isSomeActive}
+          data={data}
+          turn={active}
+          setTurn={setActive} data2={[]}      />
     </div>
+    <p className='text-white text-2xl text-center py-10'> More Questions? </p>
+    <a href="/contactus">
+          <div className="flex justify-center gap-2 pt-2">
+          
+            <p className='font-text text-center text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'> Contact Us!</p>
+            </div>
+            </a>
 
     </>
   )
