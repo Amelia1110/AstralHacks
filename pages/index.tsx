@@ -27,18 +27,18 @@ const raleway = Raleway({
 
 export default function Home() {
   return (
-    <main>
-      <div className="grid justify-center">
-        <Image src="/AstralHacksLogoWhite.png" alt="Astral Hacks Logo" width={250} height={250} className="mx-auto pt-36"/>
-        <div className="pb-6">
-          <TitleSVG/>
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="flex flex-col items-center pb-24 w-full">
+          <Image className="mx-auto lg:w-64 md:w-52 w-40" src="/AstralHacksLogoWhite.png" alt="Astral Hacks Logo" width={250} height={250}/>
+          <div className="mb-6 w-3/4 h-fit">
+            <TitleSVG/>
+          </div>
+          <p className={`${majorMonoDisplay.variable} font-heading text-center w-fit h-fit text-white lg:text-5xl md:text-3xl text-xl tracking-wide`}>coming soon</p>
         </div>
-        <p className={`${majorMonoDisplay.variable} font-heading text-center text-white text-5xl tracking-wide`}>coming soon</p>
-        <p className={`${raleway.variable} font-text text-center font-thin text-white text-xl pt-44`}>In-Person | May 17-19, 2024</p>
-        <div>
+        <div className="w-fit h-fit absolute bottom-6">
+          <p className={`${raleway.variable} font-text text-center font-thin text-white lg:text-xl text-lg`}>In-Person | May 17-19, 2024</p>
           <ContactUsFooter/>
         </div>
       </div>
-    </main>
   )
 }

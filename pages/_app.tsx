@@ -8,8 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const {pathname} = router
     
   return (
-
-    <>
+    <div className="w-screen h-screen overflow-hidden">
       <Head>
         <title>Astral Hacks</title>
       </Head>
@@ -18,8 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <div id='stars2'></div>
           <div id='stars3'></div>
         </main>
-
       <Component {...pageProps} />
-    </>
+    </div>
   )
 }
