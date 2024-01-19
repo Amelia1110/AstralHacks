@@ -1,7 +1,5 @@
-import ContactUsFooter from '@/components/ContactUsSVG';
 import TitleSVG from '@/components/TitleSVG';
-import { Major_Mono_Display, Raleway } from 'next/font/google';
-import Image from 'next/image';
+import { Major_Mono_Display } from 'next/font/google';
 
 const majorMonoDisplay = Major_Mono_Display({
   subsets: ['latin'],
@@ -9,35 +7,17 @@ const majorMonoDisplay = Major_Mono_Display({
   weight: '400'
 })
 
-const raleway = Raleway({
-  subsets: ['latin'],
-  variable: '--font-raleway',
-  weight: [
-    '100',
-    '200',
-    '300',
-    '400',
-    '500',
-    '600',
-    '700',
-    '800',
-    '900'
-  ]
-})
-
 export default function Home() {
   return (
     <main>
       <div className="grid justify-center">
-        <Image src="/AstralHacksLogoWhite.png" alt="Astral Hacks Logo" width={250} height={250} className="mx-auto pt-36"/>
-        <div className="pb-6">
+        <div className="pt-[calc(50vh_-_135px)] pb-64">
           <TitleSVG/>
         </div>
-        <p className={`${majorMonoDisplay.variable} font-heading text-center text-white text-5xl tracking-wide`}>coming soon</p>
-        <p className={`${raleway.variable} font-text text-center font-thin text-white text-xl pt-44`}>In-Person | May 17-19, 2024</p>
-        <div>
-          <ContactUsFooter/>
-        </div>
+        <p className={`${majorMonoDisplay.variable} font-heading text-center text-white text-xl`}>start your journey</p>
+        <svg className="w-14 h-14 text-white justify-self-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="0.4" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
       </div>
     </main>
   )
