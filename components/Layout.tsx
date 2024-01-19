@@ -22,7 +22,7 @@ interface LayoutProps {
 function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
   return (
     <div className='items-center flex-col grid  lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
-      <span className=' text-center text-3xl px-6 py-3 text-white'>
+      <span className='text-center text-3xl px-6 py-3 text-white'>
         FAQ
       </span>
       
