@@ -31,11 +31,11 @@ export default function FAQ() {
           turn={active}
           setTurn={setActive} data2={[]}      />
     </div>
-    <p className='text-white text-2xl text-center py-10'> More Questions? </p>
+    <p className='text-white text-2xl text-center'> More Questions? </p>
     <a href="/contactus">
-          <div className="flex justify-center gap-2 pt-2">
+          <div className="py-5 flex justify-center gap-2 pt-2">
           
-            <p className='font-text text-center text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'> Contact Us!</p>
+            <p className='font-text text-center text-white bg-teal-800 hover:bg-teal-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-teal-800 dark:hover:bg-teal-600 focus:outline-none dark:focus:ring-blue-800'> Contact Us!</p>
             </div>
             </a>
 

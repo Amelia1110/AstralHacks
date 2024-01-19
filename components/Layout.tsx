@@ -21,8 +21,8 @@ interface LayoutProps {
 
 function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
   return (
-    <div className='items-center flex-col grid grid-cols-3 lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
-      <span className='col-span-2 row-span-{1} text-left text-3xl px-6 py-3 text-white'>
+    <div className='items-center flex-col grid  lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
+      <span className=' text-center text-3xl px-6 py-3 text-white'>
         FAQ
       </span>
       
