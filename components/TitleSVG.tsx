@@ -5,7 +5,7 @@ export default function Logo() {
     <main>
     <div>
     <motion.svg
-      width="1000"
+      width="100%"
       height="100%"
       fill="none"
       viewBox="-1 -1 820.897 62.232"
