@@ -19,6 +19,10 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>
       </div>
+<<<<<<< Updated upstream
     </main>
+=======
+    
+>>>>>>> Stashed changes
   )
 }
