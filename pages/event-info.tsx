@@ -21,14 +21,14 @@ export default function EventInfo() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div className='grid grid-cols-5 grid-row-1 w-full p-20'>
-      <h1 className={`${majorMonoDisplay.variable} col-span-3 font-heading text-white text-7xl text-right`}>event info</h1>
+      <h1 className={`${majorMonoDisplay.variable} col-span-3 font-heading text-white text-8xl text-right`}>event info</h1>
     </div>
     {/*If you want it to be centered to the page and not off to the side*/}
     {/* <div className='flex w-full justify-center items-center'>
       <h1 className={`${majorMonoDisplay.variable} col-span-2 font-heading text-white text-7xl text-right `}>event info</h1>
     </div> */}
   <div className="grid w-full h-full grid-cols-7 items-center pt-6">
-    <p className={`${raleway.variable} text-[#bac2b3] col-start-3 col-end-7 text-2xl`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium omnis sed deleniti dolorum nesciunt, inventore quis. Dolores voluptate numquam ipsa ex, eos distinctio vel asperiores dolorum quos esse doloribus atque vero illo eaque quisquam maiores perspiciatis sed sint commodi in! Dolores optio soluta et ducimus ipsum nam sunt molestias, dignissimos sed delectus, iure quisquam, nostrum maiores libero nulla impedit cum aliquid eveniet commodi saepe. Dolor quasi temporibus libero cumque, accusantium a numquam cupiditate earum eum sunt, enim reprehenderit nam repellendus impedit provident obcaecati delectus veritatis error, est quas facere dolorum dolorem? Fugit tenetur ipsam incidunt dolores ipsum dicta ut?</p>
+    <p className={`${raleway.variable} text-[#bac2b3] col-start-3 col-end-7 text-3xl`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium omnis sed deleniti dolorum nesciunt, inventore quis. Dolores voluptate numquam ipsa ex, eos distinctio vel asperiores dolorum quos esse doloribus atque vero illo eaque quisquam maiores perspiciatis sed sint commodi in! Dolores optio soluta et ducimus ipsum nam sunt molestias, dignissimos sed delectus, iure quisquam, nostrum maiores libero nulla </p>
 
   </div>
 
