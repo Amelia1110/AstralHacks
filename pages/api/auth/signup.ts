@@ -10,7 +10,7 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
 
     if (req.method === "POST"){
         if (!req.body) return res.status(400).json({error: "Data is missing"})
-
+        
         const {fullName,email,p} = req.body
         const password = String(p)
 
