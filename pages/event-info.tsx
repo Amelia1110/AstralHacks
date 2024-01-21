@@ -28,7 +28,7 @@ export default function EventInfo() {
       <h1 className={`${majorMonoDisplay.variable} col-span-2 font-heading text-white text-7xl text-right `}>event info</h1>
     </div> */}
   <div className="grid w-full h-full grid-cols-7 items-center pt-6">
-    <p className={`${raleway.variable} text-[#bac2b3] col-start-3 col-end-7 text-3xl`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium omnis sed deleniti dolorum nesciunt, inventore quis. Dolores voluptate numquam ipsa ex, eos distinctio vel asperiores dolorum quos esse doloribus atque vero illo eaque quisquam maiores perspiciatis sed sint commodi in! Dolores optio soluta et ducimus ipsum nam sunt molestias, dignissimos sed delectus, iure quisquam, nostrum maiores libero nulla </p>
+    <p className={`${raleway.variable} text-[#bac2b3] col-start-3 col-end-7 text-3xl`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et amet porro odit debitis fuga reiciendis eligendi ea sunt adipisci earum quam culpa molestias saepe delectus totam a maiores, velit tenetur, vitae repellat sit incidunt sed nesciunt. Optio, voluptate modi. Tempora voluptates assumenda deleniti consequatur. Culpa minus tenetur repudiandae necessitatibus excepturi corrupti debitis assumenda porro nesciunt quae laudantium, esse, voluptas, harum consequuntur optio ea voluptates facilis aliquam inventore accusamus delectus. Possimus et molestias totam reiciendis nihil rerum rem eligendi officiis perferendis.</p>
 
   </div>
 
