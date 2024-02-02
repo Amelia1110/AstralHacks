@@ -9,7 +9,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const router = useRouter()
   const {pathname} = router
-
   return (
     <>
       <SessionProvider session={pageProps.session}>
@@ -28,5 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps}/>
       </SessionProvider>
     </>
+
   )
 }

@@ -1,12 +1,10 @@
+import router from "next/dist/client/router";
 import { loginUser } from "@/helpers";
 import { AxiosError } from "axios";
 import Link from "next/link";
 import NavLink from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-
-
-
 
 const LoginForm: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -44,7 +42,6 @@ const LoginForm: React.FC = () => {
 
     };
     
-   
     return (
        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
          <div className="max-w-md w-full space-y-8">
@@ -108,6 +105,8 @@ const LoginForm: React.FC = () => {
                  </div>
                  </div>
 
-                 )}
+                 )
+  
+    }
 
 export default LoginForm

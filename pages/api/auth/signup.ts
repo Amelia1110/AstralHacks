@@ -14,6 +14,7 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
         const {fullName,email,password} = req.body
         const p = String(password)
 
+
         const userExists = await User.findOne({email})
 
         if (userExists){
