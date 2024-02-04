@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React, { Dispatch, SetStateAction } from 'react'
 import down from "../public/down.svg";
-import Accordion from './Accordian';
 import Head from 'next/head';
+import FAQ from '@/pages/faq';
+import FAQItem from './FAQITem';
+import { Major_Mono_Display } from 'next/font/google';
 
 type Props = {
     question :string,
@@ -19,11 +21,17 @@ interface LayoutProps {
     data2: Props[]
 }
 
-function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
+const majorMonoDisplay = Major_Mono_Display({
+  subsets: ['latin'],
+  variable: '--font-major_mono_display',
+  weight: '400'
+})
+
+function FAQPage({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
   return (
     <div className='items-center flex-col grid  lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
-      <span className='text-center text-3xl px-6 py-3 text-white'>
-        FAQ
+      <span className={`${majorMonoDisplay.variable} font-heading text-center text-4xl px-6 py-3 text-white`}>
+        faq
       </span>
       
       <div className='flex justify-auto w-full mb-6 lg:justify-end'>
@@ -41,7 +49,7 @@ function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: Layou
       {data.map((el, i) => {
         return (
           <div className='w-full' key={"questions" + i}>
-            <Accordion
+            <FAQItem
               question={el.question}
               answer={el.answer}
               turn={turn}
@@ -54,4 +62,4 @@ function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: Layou
   );
 }
 
-export default Layout
+export default FAQPage

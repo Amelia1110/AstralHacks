@@ -5,6 +5,13 @@ import Link from "next/link";
 import NavLink from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { Major_Mono_Display, Roboto_Mono } from "next/font/google";
+
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  weight: ['100', '200', '300', '400', '500', '600', '700']
+})
 
 const LoginForm: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -43,11 +50,11 @@ const LoginForm: React.FC = () => {
     };
     
     return (
-       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+       <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
          <div className="max-w-md w-full space-y-8">
            <div>
-             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-               Sign in to your account
+             <h2 className={`${robotoMono.variable} font-heading font-medium tracking-wide mt-6 text-center text-3xl  text-white`}>
+               SIGN IN TO YOUR ACCOUNT
              </h2>
            </div>
            <form className="mt-8 space-y-6" onSubmit={handleSubmit}>

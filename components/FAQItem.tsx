@@ -11,7 +11,7 @@ type Props = {
     idx: number
 }
 
-const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
+const FAQItem = ({question, answer, turn, setTurn, idx}: Props) => {
 
     const contentRef = useRef<HTMLDivElement>(null);
 
@@ -51,4 +51,4 @@ const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
   )
 }
 
-export default Accordion
+export default FAQItem

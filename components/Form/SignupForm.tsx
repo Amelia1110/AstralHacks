@@ -1,10 +1,14 @@
 import { loginUser } from '@/helpers';
 import axios, { AxiosError } from 'axios';
+import { Major_Mono_Display } from 'next/font/google';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
-
-
+const majorMonoDisplay = Major_Mono_Display({
+  subsets: ['latin'],
+  variable: '--font-major_mono_display',
+  weight: '400'
+})
 
 const SignUpForm = () => {
  const [formData, setFormData] = useState({

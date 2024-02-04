@@ -14,8 +14,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        heading: ['var(--font-major_mono_display)'],
-        text: ['var(--font-raleway)'],
+        styled: ['var(--font-major_mono_display)'],
+        heading: ['var(--font-roboto)'],
+        text: ['var(--font-roboto)'],
       },
     },
   },
