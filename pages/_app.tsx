@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const {pathname} = router
   return (
-    <>
+    <div className="w-screen h-screen">
       <SessionProvider session={pageProps.session}>
       <Head>
         <title>Astral Hacks</title>
@@ -23,9 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
           <div id='stars2'></div>
           <div id='stars3'></div>
         </main>
-      <Component {...pageProps}/>
+      <Component {...pageProps} className="w-full h-full"/>
       </SessionProvider>
-    </>
+    </div>
 
   )
 }
