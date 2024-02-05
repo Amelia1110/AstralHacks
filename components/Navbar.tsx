@@ -17,6 +17,8 @@ export default function Navbar() {
         { title: "Event Info", route: "event-info" },
         { title: "FAQ", route: "faq" },
         { title: "Sponsors", route: "sponsor-info" },
+        { title: "Team", route: "team" },
+
     ]
     // Maybe name changes? Apply Now --> Apply, Sponsor Info --> Sponsors, 
     // Event Info --> About Us (?) maybe idk use judgement. 
