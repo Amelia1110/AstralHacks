@@ -1,11 +1,16 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto_Mono } from 'next/font/google'
 import { useState } from 'react'
 import data from "../public/data.json"
 import { Layout } from 'antd'
-import FAQPage from '@/components/FAQ'
+import FAQGroup from '@/components/FAQGroup'
 const inter = Inter({ subsets: ['latin'] })
 
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  weight: ['100', '200', '300', '400', '500', '600', '700']
+})
 
 export default function FAQ() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -17,24 +22,25 @@ export default function FAQ() {
   };
 
   return (
-    <div>
-    <div className='grid row-start-1 place-items-center w-full'>
-      <FAQPage
+    <div className="pt-20 w-full h-full">
+      <div className='flex w-full justify-center items-center'>
+        <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right `}>QUESTIONS?</h1>
+      </div>
+      <div className='grid row-start-1 place-items-center w-full mb-2'>
+        <FAQGroup
           handleClick={handleClick}
           isSomeActive={isSomeActive}
           data={data}
           turn={active}
           setTurn={setActive} data2={[]}
           />
-    </div>
-    <p className='text-white text-2xl text-center'> More Questions? </p>
-    <a href="/contactus">
+      </div>
+      <p className='text-white text-2xl text-center'> More Questions? </p>
+      <a href="/contactus">
           <div className="py-5 flex justify-center gap-2 pt-2">
-          
             <p className='font-text text-center text-white bg-teal-800 hover:bg-teal-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-teal-800 dark:hover:bg-teal-600 focus:outline-none dark:focus:ring-blue-800'> Contact Us!</p>
-            </div>
-            </a>
-
+          </div>
+      </a>
     </div>
   )
 }
