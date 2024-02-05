@@ -1,5 +1,4 @@
-import { Major_Mono_Display, Raleway, Roboto_Mono } from 'next/font/google';
-import Head from 'next/head'
+import { Roboto_Mono } from 'next/font/google';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],

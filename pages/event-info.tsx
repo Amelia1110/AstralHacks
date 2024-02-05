@@ -1,4 +1,4 @@
-import { Major_Mono_Display, Raleway, Roboto_Mono } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 import Head from 'next/head'
 
 const robotoMono = Roboto_Mono({

@@ -37,7 +37,7 @@ const FAQItem = ({question, answer, turn, setTurn, idx}: Props) => {
   return (
     <div className='flex grid-flow-col rounded items-center justify-center w-full px-2 text-lg pt-4 lg:text-base'>
       <button onClick={toggleAccordion}
-       className={`bg-black px-5 rounded shadow border border-white cursor-pointer w-full h-full ${turn![idx]}`}>
+       className={`bg-black opacity-45 px-5 rounded shadow border border-white cursor-pointer w-full h-full ${turn![idx]}`}>
         <div className='py-3'>
            <div className='grid-flow-col flex items-center justify-between h-14 text-left'>
               <span className={`${robotoMono.variable} font-text ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-white`}>{question}</span>

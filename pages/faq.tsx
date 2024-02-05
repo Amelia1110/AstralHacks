@@ -4,7 +4,6 @@ import { useState } from 'react'
 import data from "../public/data.json"
 import { Layout } from 'antd'
 import FAQGroup from '@/components/FAQGroup'
-const inter = Inter({ subsets: ['latin'] })
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
