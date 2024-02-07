@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React, { Dispatch, SetStateAction } from 'react'
 import down from "../public/down.svg";
-import Accordion from './Accordian';
 import Head from 'next/head';
+import FAQ from '@/pages/faq';
+import FAQItem from './FAQITem';
+import { Major_Mono_Display, Roboto_Mono } from 'next/font/google';
 
 type Props = {
     question :string,
@@ -19,14 +21,10 @@ interface LayoutProps {
     data2: Props[]
 }
 
-function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
+function FAQGroup({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
   return (
-    <div className='items-center flex-col grid  lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
-      <span className='text-center text-3xl px-6 py-3 text-white'>
-        FAQ
-      </span>
-      
-      <div className='flex justify-auto w-full mb-6 lg:justify-end'>
+    <div className='items-center flex-col grid  lg:w-7/12 w-full my-8 px-4'>
+      <div className='flex justify-auto w-full lg:justify-end'>
         <button
         >
           <div
@@ -41,7 +39,7 @@ function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: Layou
       {data.map((el, i) => {
         return (
           <div className='w-full' key={"questions" + i}>
-            <Accordion
+            <FAQItem
               question={el.question}
               answer={el.answer}
               turn={turn}
@@ -54,4 +52,4 @@ function Layout({ handleClick, isSomeActive, data, data2, turn, setTurn }: Layou
   );
 }
 
-export default Layout
+export default FAQGroup
