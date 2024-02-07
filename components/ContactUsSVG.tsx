@@ -16,6 +16,9 @@ const raleway = Raleway({
       '900'
     ]
   })
+
+// Not currently used except in Coming Soon
+
 export default function ContactUsFooter(){
     return(
         <main>
