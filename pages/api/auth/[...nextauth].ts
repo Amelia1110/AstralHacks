@@ -48,13 +48,20 @@ const options: NextAuthOptions = {
         strategy : "jwt"
     },
     callbacks:{
-        jwt: async ({token, user}) => {
+        jwt: async ({token, user, trigger, session}) => {
             user && (token.user = user)
+
+            if (trigger === "update"){
+                console.log("updating")
+                console.log(session)
+                return session
+            }
             return token
         },
         session: async({session,token}) => {
             const user = token.user as IUser
             session.user = user
+            //console.log(session)
             return session
         }
     },

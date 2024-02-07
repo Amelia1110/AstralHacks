@@ -7,6 +7,9 @@ export interface IUser{
     _id : string;
     email: string;
     fullName : string;
+    answerOne : string;
+    answerTwo : string;
+    answerThree :string;
     
 }
 
