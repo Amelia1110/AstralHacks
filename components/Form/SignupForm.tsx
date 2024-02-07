@@ -52,17 +52,17 @@ const SignUpForm = () => {
       try{
         setLoading(true)
         const apiRes = await axios.post("http://localhost:3000/api/auth/signup", formData)
-        
-        if (apiRes?.data?.success){
+        //console.log(apiRes)
+        if (apiRes?.statusText === "OK"){
           // save data in session
-
+    
           const loginRes = await loginUser({
             email: formData.email,
             password : formData.password,
           })
-
+          
           if (loginRes && !loginRes.ok){
-            console.log("Problemo")
+            //console.log("Problemo")
             setSubmitError(loginRes.error || "")
           }
           else{

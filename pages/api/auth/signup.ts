@@ -30,13 +30,20 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
             User.create({
                 fullName,
                 email,
-                password : hashedPassword
+                password : hashedPassword,
+                answerOne : " ",
+                answerTwo : " ",
+                answerThree : " ",
+                
             }).then(async(data:IUser) => {
 
                 const user = {
                     email : data.email,
                     fullName : data.fullName,
-                    _id : data._id
+                    _id : data._id,
+                    answerOne : " ",
+                    answerTwo : " ",
+                    answerThree: " ",
                 }
 
                 return res.status(201).json({
