@@ -19,7 +19,7 @@ export default function SponsorInfo() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="flex justify-center items-center">
-            <h1 className={`${majorMonoDisplay.variable} text-8xl text-right font-heading text-white`}>our team</h1>
+            <h1 className={`${majorMonoDisplay.variable} text-8xl text-right font-heading text-white`}>Our Team</h1>
             </div>
             <div className="flex justify-evenly pt-24">
                 <h1 className={`${majorMonoDisplay.variable} ${defaultStuff}`}>Leaders</h1>
