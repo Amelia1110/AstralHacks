@@ -1,10 +1,14 @@
 import { loginUser } from '@/helpers';
 import axios, { AxiosError } from 'axios';
+import { Major_Mono_Display } from 'next/font/google';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
-
-
+const majorMonoDisplay = Major_Mono_Display({
+  subsets: ['latin'],
+  variable: '--font-major_mono_display',
+  weight: '400'
+})
 
 const SignUpForm = () => {
  const [formData, setFormData] = useState({
@@ -52,17 +56,17 @@ const SignUpForm = () => {
       try{
         setLoading(true)
         const apiRes = await axios.post("http://localhost:3000/api/auth/signup", formData)
-        
-        if (apiRes?.data?.success){
+        //console.log(apiRes)
+        if (apiRes?.statusText === "OK"){
           // save data in session
-
+    
           const loginRes = await loginUser({
             email: formData.email,
             password : formData.password,
           })
-
+          
           if (loginRes && !loginRes.ok){
-            console.log("Problemo")
+            //console.log("Problemo")
             setSubmitError(loginRes.error || "")
           }
           else{

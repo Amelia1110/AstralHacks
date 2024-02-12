@@ -16,6 +16,19 @@ const UserSchema = new Schema ({
         type: String,
         required : [true, "Password is required"],
         select : false,
+    },
+    
+    answerOne :{
+        type: String,
+        required : [true, "An answer for this is required"]
+    },
+    answerTwo :{
+        type: String,
+        required : [true, "An answer for this is required"]
+    },
+    answerThree :{
+        type: String,
+        required : [true, "An answer for this is required"]
     }
 })
 
