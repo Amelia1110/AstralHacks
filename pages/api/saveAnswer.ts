@@ -21,8 +21,6 @@ const handler = async (req:NextApiRequest, res : NextApiResponse) => {
            //console.log(userExists) 
            //console.log(answerOne)
            const result = await User.updateOne({"email" : email}, {$set: {"answerOne" : answerOne, "answerTwo" : answerTwo, "answerThree" : answerThree}})
-
-           //console.log(result)
            res.status(200).json({success:true})
         }
 
