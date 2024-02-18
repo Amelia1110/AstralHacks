@@ -14,7 +14,14 @@ export default function EventInfo() {
         <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right `}>EVENT INFO</h1>
       </div>
       <div className="w-full items-center mt-10">
-        <p className={`${robotoMono.variable} font-text font-light text-center leading-relaxed text-white text-2xl mx-56`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et amet porro odit debitis fuga reiciendis eligendi ea sunt adipisci earum quam culpa molestias saepe delectus totam a maiores, velit tenetur, vitae repellat sit incidunt sed nesciunt. Optio, voluptate modi. Tempora voluptates assumenda deleniti consequatur. Culpa minus tenetur repudiandae necessitatibus excepturi corrupti debitis assumenda porro nesciunt quae laudantium, esse, voluptas, harum consequuntur optio ea voluptates facilis aliquam inventore accusamus delectus. Possimus et molestias totam reiciendis nihil rerum rem eligendi officiis perferendis.</p>
+        <p className={`${robotoMono.variable} font-text font-light text-center leading-relaxed text-white text-xl mx-56`}>
+          Join us this May for Astral Hacks, the ultimate in-person hackathon designed by high schoolers, for high schoolers!
+          Dive into a 36-hour journey of innovation, where you&apos;ll create original tech projects, pitch to judges, and compete
+          for prizes. Crafted in London, Ontario, Astral Hacks is your launchpad into the world of hacking, offering workshops, speakers, and
+          fun events to equip you with the skills you need to tackle real-world problems with creativity and flair. Just like the
+          stars guide us through the night sky, Astral Hacks will guide you on a journey of technological exploration, pushing
+          boundaries and embracing limitless possibilities. Don&apos;t miss out - join us and reach for the stars!
+        </p>
       </div>
     </div>
   )
