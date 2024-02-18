@@ -1,32 +1,27 @@
 [
     {
         "idx": 1,
-        "question":"meow?",
-        "answer":"She sat down with her notebook in her hand, her mind wandering to faraway places. She paused and considered all that had happened. It hadn't gone as expected. When the day began she thought it was going to be a bad one, but as she sat recalling the day's events to write them down, she had to admit, it had been a rather marvelous day."
+        "question":"What if I don't have any coding experience?",
+        "answer":"That's okay! We are a beginner-friendly hackathon. Be sure to talk to the event mentors and check out some workshops while you're there!"
     },
     {
         "idx": 2,
-        "question":"good morning",
-        "answer":"Cake or pie? I can tell a lot about you by which one you pick. It may seem silly, but cake people and pie people are really different. I know which one I hope you are, but that's not for me to decide. So, what is it? Cake or pie?"
+        "question":"How many people can be on a team?",
+        "answer":"Teams can have anywhere from 1-4 members."
     },
     {
         "idx": 3,
-        "question":"hello team",
-        "answer":"rawrrrr"
+        "question":"What if I can't find a team?",
+        "answer":"No worries, we will help you find teammates! If you don't already have a team, you can find teammates in our discord server or at the workshop hosted at the hackathon. Working by yourself is always an option too!"
     },
     {
         "idx": 4,
-        "question":"you can do it",
-        "answer":"yes i can"
+        "question":"How much does it cost?",
+        "answer":"It's free! We will provide accommodation and food services throughout the event. Just make sure to bring a sleeping bag, toiletries, and anything else you think you'll need for the weekend!"
     },
     {
         "idx": 5,
-        "question":"ruh roh",
-        "answer":"Was it enough? That was the question he kept asking himself. Was being satisfied enough? He looked around him at everyone yearning to just be satisfied in their daily life and he had reached that goal. He knew that he was satisfied and he also knew it wasn't going to be enough."
-    },
-    {
-        "idx": 6,
-        "question":"car goes vroom",
-        "answer":"vroom vroom"
+        "question":"Can we create hardware projects?",
+        "answer":"Unfortunately, we are unable to provide hardware at Astral Hacks this year, but if you have your own materials, you are welcome to incorporate them into your project!"
     }
 ]
