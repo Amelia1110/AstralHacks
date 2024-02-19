@@ -10,7 +10,9 @@ import { Major_Mono_Display, Roboto_Mono } from "next/font/google";
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-roboto',
-  weight: ['100', '200', '300', '400', '500', '600', '700']
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  display : 'block',
+
 })
 
 const LoginForm: React.FC = () => {
@@ -30,7 +32,7 @@ const LoginForm: React.FC = () => {
       try{
         setLoading(true)
         const loginRes = await loginUser({email, password})
-        console.log(loginRes)
+        //console.log(loginRes)
 
         if (loginRes && !loginRes.ok){
           setSubmitError(loginRes.error || "")

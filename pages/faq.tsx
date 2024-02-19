@@ -8,7 +8,8 @@ import FAQGroup from '@/components/FAQGroup'
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-roboto',
-  weight: ['100', '200', '300', '400', '500', '600', '700']
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  display : 'block',
 })
 
 export default function FAQ() {

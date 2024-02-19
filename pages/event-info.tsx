@@ -1,17 +1,23 @@
 import { Roboto_Mono } from 'next/font/google';
 import Head from 'next/head'
+import { useEffect, useState } from 'react';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-roboto',
-  weight: ['100', '200', '300', '400', '500', '600', '700']
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  display : 'block',
 })
 
 export default function EventInfo() {
+
+
+  
+
   return (
     <div className="pt-20 w-full h-full">
       <div className='flex w-full justify-center items-center'>
-        <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right `}>EVENT INFO</h1>
+        <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right`}>EVENT INFO</h1>
       </div>
       <div className="w-full items-center mt-10">
         <p className={`${robotoMono.variable} font-text font-light text-center leading-relaxed text-white text-xl mx-56`}>
