@@ -32,7 +32,7 @@ const LoginForm: React.FC = () => {
       try{
         setLoading(true)
         const loginRes = await loginUser({email, password})
-        console.log(loginRes)
+        //console.log(loginRes)
 
         if (loginRes && !loginRes.ok){
           setSubmitError(loginRes.error || "")
