@@ -20,19 +20,19 @@ export default function App({ Component, pageProps }: AppProps) {
     offset: ["start start", "end start"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "600%"]);
 
   return (
-    <div className="w-screen h-screen">
+    <div>
       <SessionProvider session={pageProps.session}>
       <Head>
         <title>Astral Hacks</title>
       </Head>
       <header>
-        <Navbar/>
+        <Navbar ref={ref}/>
       </header> 
       <main>
-        <div className="w-full h-screen overflow-hidden relative grid">
+        <div className="w-full h-screen relative grid">
           <motion.div 
             className="absolute inset-0 z-0"
             style={{
@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <div id='stars2'></div>
             <div id='stars3'></div>
           </motion.div>
-          <Component {...pageProps} className="w-full h-full"/>
+          <Component {...pageProps} className="w-full h-full absolute"/>
         </div>
       </main>
       </SessionProvider>

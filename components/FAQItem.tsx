@@ -35,20 +35,19 @@ const FAQItem = ({question, answer, turn, setTurn, idx}: Props) => {
         setTurn!(newTurn)
     }
   return (
-    <div className='flex grid-flow-col rounded items-center justify-center w-full px-2 text-lg pt-4 lg:text-base'>
+    <div className='flex grid-flow-col rounded content-start items-start justify-center w-full px-2 text-lg pt-4 lg:text-base'>
       <button onClick={toggleAccordion}
        className={`bg-black opacity-45 px-5 rounded shadow border border-white cursor-pointer w-full h-full ${turn![idx]}`}>
         <div className='py-3'>
-           <div className='grid-flow-col flex items-center justify-between h-14 text-left'>
-              <span className={`${robotoMono.variable} font-text ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-white`}>{question}</span>
+           <div className='grid-flow-col flex items-center justify-between h-16 text-left'>
+              <span className={`${robotoMono.variable} font-text mx-2 font-medium lg:font-semibold lg:text-xl text-sm text-white`}>{question}</span>
               <div>
-               { turn![idx] ? <Image src={minus} alt="" width={30} height={30}/> :
-                <Image src={plus} alt="" width={20} height={20}/>}
-
+               { turn![idx] ? <Image src={minus} alt="minus" width={30} height={30}/> :
+                <Image src={plus} alt="plus" width={20} height={20}/>}
               </div>
            </div>
            <div ref={contentRef} className={`${robotoMono.variable} font-text mx-4 overflow-hidden text-left text-white transition-all duration-500 h-full`}>
-              <p className={`${robotoMono.variable} font-text py-1 pb-4 border-white font-light leading-normal text-justify whitespace-pre-line text-xs lg:text-lg`}>
+              <p className={`${robotoMono.variable} font-text py-6 border-white font-light tracking-tight text-justify whitespace-pre-line text-xs lg:text-lg`}>
                 {answer}
               </p>
            </div>

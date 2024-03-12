@@ -1,5 +1,10 @@
 [
     {
+        "idx": 0,
+        "question":"Who can attend?",
+        "answer":"Astral Hacks is made by high school students, for high school students. Attending a hackathon is not only an enriching experience, it is also beneficial for future university applications!"
+    },
+    {
         "idx": 1,
         "question":"What if I don't have any coding experience?",
         "answer":"That's okay! We are a beginner-friendly hackathon. Be sure to talk to the event mentors and check out some workshops while you're there!"

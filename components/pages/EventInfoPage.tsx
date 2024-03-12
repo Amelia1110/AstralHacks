@@ -1,4 +1,4 @@
-import { Major_Mono_Display, Raleway, Roboto_Mono } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 
 const robotoMono = Roboto_Mono({
     subsets: ['latin'],
@@ -8,10 +8,9 @@ const robotoMono = Roboto_Mono({
 
 })
 
-export default function EventInfo() {
+export default function EventInfoPage() {
     return (
-        <main>
-            <div className="pt-20">
+        <main id="event-info-page" className="py-48">
                 <div className='flex w-full justify-center items-center'>
                     <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right`}>EVENT INFO</h1>
                 </div>
@@ -25,7 +24,6 @@ export default function EventInfo() {
                         boundaries and embracing limitless possibilities. Don&apos;t miss out - join us and reach for the stars!
                     </p>
                 </div>
-            </div>
         </main>
     );
 }

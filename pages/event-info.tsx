@@ -11,9 +11,6 @@ const robotoMono = Roboto_Mono({
 
 export default function EventInfo() {
 
-
-  
-
   return (
     <div className="pt-20 w-full h-full">
       <div className='flex w-full justify-center items-center'>

@@ -7,23 +7,24 @@ const robotoMono = Roboto_Mono({
     subsets: ['latin'],
     variable: '--font-roboto',
     weight: ['100', '200', '300', '400', '500', '600', '700'],
-    display : 'block',
+    display: 'block',
 
 })
 
 const majorMonoDisplay = Major_Mono_Display({
     subsets: ['latin'],
     variable: '--font-major_mono_display',
-    weight: '400'
+    weight: '400',
+    display: 'block',
 })
 
-export default function LandingPage() {
+export default function LandingPage(ref: any) {
     // Maybe name changes? Apply Now --> Apply, Sponsor Info --> Sponsors, 
     // Event Info --> About Us (?) maybe idk use judgement. 
     return (
-        <main>
+        <main id="landing-page" className="h-screen">
             <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-col pt-[calc(50vh_-_135px)] pb-64 items-center gap-8 ">
+                <div className="flex flex-col pt-[calc(50vh_-_135px)] pb-40 items-center gap-8 ">
                     <TitleSVG/>
                     <motion.div
                         initial={{ opacity: 0}}
@@ -31,7 +32,7 @@ export default function LandingPage() {
                         transition={{ duration: 2.8, delay: 0.9 }}
                      >
                     <p className={`${robotoMono.variable} font-heading font-semibold tracking-wide text-white text-4xl`}>
-                        MAY 17-19, 2024 | IN PERSON
+                        MAY 17-19, 2024 | IN PERSON 
                     </p>
                     </motion.div> 
                 </div>

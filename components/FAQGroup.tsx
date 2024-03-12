@@ -23,19 +23,7 @@ interface LayoutProps {
 
 function FAQGroup({ handleClick, isSomeActive, data, data2, turn, setTurn }: LayoutProps): React.JSX.Element {
   return (
-    <div className='items-center flex-col grid  lg:w-7/12 w-full my-8 px-4'>
-      <div className='flex justify-auto w-full lg:justify-end'>
-        <button
-        >
-          <div
-            className={"transition-all ease-in-out duration-200 " +
-              (isSomeActive ? " rotate-180" : "rotate-0")}
-          >
-
-          </div>
-        </button>
-      </div>
-
+    <div className='items-start flex-col grid grid-cols-3 w-full my-8 px-20'>
       {data.map((el, i) => {
         return (
           <div className='w-full' key={"questions" + i}>
@@ -44,7 +32,8 @@ function FAQGroup({ handleClick, isSomeActive, data, data2, turn, setTurn }: Lay
               answer={el.answer}
               turn={turn}
               setTurn={setTurn}
-              idx={el.idx} />
+              idx={el.idx} 
+              />
           </div>
         );
       })}
