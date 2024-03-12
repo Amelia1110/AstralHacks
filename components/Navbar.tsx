@@ -28,7 +28,7 @@ export default function Navbar() {
     // Event Info --> About Us (?) maybe idk use judgement. 
     return (
         <nav className="flex justify-between items-center h-20 p-10">
-            <Link href="/" className={`${majorMonoDisplay.variable} font-heading text-white drop-shadow-md`}>
+            <Link href="/testParallax" className={`${majorMonoDisplay.variable} font-heading text-white drop-shadow-md`}>
                 <Image src="/AstralHacksLogoWhite.png" alt="Logo" width={65} height={65} className="inline-flex" /> </Link>
             <ul className={`${robotoMono.variable} font-text font-light text-xl flex justify-start gap-12 list-none text-white drop-shadow-md`}>
                 {links.map((link) => (
