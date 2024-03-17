@@ -4,6 +4,8 @@ import { useState } from 'react'
 import data from "@/public/data.json"
 import { Layout } from 'antd'
 import FAQGroup from '@/components/FAQGroup'
+import Link from 'next/link'
+import { MdEmail } from 'react-icons/md'
 
 const robotoMono = Roboto_Mono({
     subsets: ['latin'],
@@ -38,9 +40,11 @@ export default function FAQPage() {
             </div>
             <div className="flex flex-col justify-center items-center gap-4">
                 <p className={`${robotoMono.variable} font-text text-white text-2xl text-center`}> Any Other Questions? </p>
-                <a href="/contactus" className="w-48">
-                    <p className={`${robotoMono.variable} font-text text-center text-black bg-white hover:bg-teal-600 transition-all duration-150 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 dark:bg-teal-800 dark:hover:bg-teal-600 focus:outline-none dark:focus:ring-blue-800`}> Contact Us!</p>
-                </a>
+                <div className="bg-white hover:bg-black opacity-45 border rounded-lg shadow-md border-white py-2.5 px-8 text-black hover:text-white">
+                    <Link href="https://mail.google.com/mail/?view=cm&to=astralhacks.info@gmail.com" target="_blank" className="flex gap-3 items-center">
+                        <p className={`${robotoMono.variable} font-text `}>Contact Us!</p>
+                    </Link>
+                </div>
             </div>
         </main>
     );

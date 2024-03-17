@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
     offset: ["start start", "end start"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "600%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
   return (
     <div>

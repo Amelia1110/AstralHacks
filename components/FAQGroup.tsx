@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React, { Dispatch, SetStateAction } from 'react'
 import down from "../public/down.svg";
 import Head from 'next/head';
-import FAQ from '@/pages/faq';
 import FAQItem from './FAQItem';
 import { Major_Mono_Display, Roboto_Mono } from 'next/font/google';
 
