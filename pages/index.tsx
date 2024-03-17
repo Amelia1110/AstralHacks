@@ -13,7 +13,6 @@ export default function Home(ref: any) {
         <EventInfoPage/>
         <FAQPage/>
         <SponsorPage/>
-        <TeamPage/>
         <ApplicationPage/>
         <FooterSection/>
     </main>
