@@ -30,7 +30,7 @@ export default function FooterSection(ref: any) {
                     
                 </div>
             </div>
-            <Image src="/moon.png" alt="moon" width={100} height={100} className="absolute inset-0 z-10"/>
+            <Image src="/moon.png" alt="moon" fill={true} className="absolute inset-0 z-10"/>
         </main> 
     );
 }
