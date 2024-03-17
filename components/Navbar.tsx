@@ -19,9 +19,7 @@ export default function Navbar(ref: any) {
     const links = [
         { title: "Apply Now", route: "application-page" },
         { title: "Event Info", route: "event-info-page" },
-        { title: "FAQ", route: "faq-page" },
-        { title: "Sponsors", route: "sponsor-page" },
-        { title: "Our Team", route: "team-page" },
+        { title: "FAQ", route: "faq-page" }
     ]
 
     // Maybe name changes? Apply Now --> Apply, Sponsor Info --> Sponsors, 

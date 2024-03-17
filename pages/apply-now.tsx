@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 
 type Props =  {}
 
-
+/*
 const ApplyNow = (props : Props) => {
     const {data: session }: any = useSession();
     const router = useRouter()
@@ -39,3 +39,4 @@ const ApplyNow = (props : Props) => {
 }
 
 export default ApplyNow
+*/
