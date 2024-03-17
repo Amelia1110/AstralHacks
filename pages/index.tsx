@@ -12,6 +12,7 @@ export default function Home(ref: any) {
         <LandingPage/>
         <EventInfoPage/>
         <FAQPage/>
+        <SponsorPage/>
         <ApplicationPage/>
         <FooterSection/>
     </main>
