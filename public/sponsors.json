@@ -43,18 +43,12 @@
     },
     {
         "id": 7,
-        "name":"Algoverse",
+        "name":"Interview Cake",
         "tier":"In Kind",
-        "logo":"cryptochicks.png"
+        "logo":"interviewcake.png"
     },
     {
         "id": 8,
-        "name":"Interview Cake",
-        "tier":"In Kind",
-        "logo":"cryptochicks.png"
-    },
-    {
-        "id": 9,
         "name":"CryptoChicks",
         "tier":"In Kind",
         "logo":"cryptochicks.png"
