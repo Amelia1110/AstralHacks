@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "name":".xyz",
+        "tier":"In Kind",
+        "logo":"xyz.png"
+    },
+    {
+        "id": 1,
+        "name":"Junction Climbing Centre",
+        "tier":"In Kind",
+        "logo":"junction.png"
+    },
+    {
+        "id": 2,
+        "name":"echo3D",
+        "tier":"In Kind",
+        "logo":"echo3D.png"
+    },
+    {
+        "id": 3,
+        "name":"WolframAlpha",
+        "tier":"In Kind",
+        "logo":"wolframalpha.png"
+    },
+    {
+        "id": 4,
+        "name":"1Password",
+        "tier":"In Kind",
+        "logo":"1Password.png"
+    },
+    {
+        "id": 5,
+        "name":"Goliath Automation & Robotics",
+        "tier":"In Kind",
+        "logo":"goliath.png"
+    },
+    {
+        "id": 6,
+        "name":"Certopus",
+        "tier":"In Kind",
+        "logo":"certopus.png"
+    },
+    {
+        "id": 7,
+        "name":"Interview Cake",
+        "tier":"In Kind",
+        "logo":"interviewcake.png"
+    },
+    {
+        "id": 8,
+        "name":"CryptoChicks",
+        "tier":"In Kind",
+        "logo":"cryptochicks.png"
+    }
+]
