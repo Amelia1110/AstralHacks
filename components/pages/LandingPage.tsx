@@ -32,7 +32,7 @@ export default function LandingPage(ref: any) {
                         transition={{ duration: 2.8, delay: 0.9 }}
                      >
                     <p className={`${robotoMono.variable} font-heading font-semibold tracking-wide text-white text-4xl`}>
-                        TO BE DETERMINED, 2024 | IN PERSON 
+                        TEMPORARILY POSTPONED | IN PERSON 
                     </p>
                     </motion.div> 
                 </div>
