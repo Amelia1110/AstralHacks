@@ -12,7 +12,7 @@ export default function ApplicationPage() {
     return (
         <main id="application-page" className="py-6">
                 <div className='flex w-full justify-center items-center'>
-                    <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right`}>APPLICATIONS AVAILABLE SOON</h1>
+                    <h1 className={`${robotoMono.variable} font-heading text-white text-medium text-7xl text-right`}>APPLICATIONS CLOSED</h1>
                 </div>
                 <div className="w-full items-center mt-10">
                     <p className={`${robotoMono.variable} font-text font-light text-center leading-relaxed text-white text-3xl mx-56`}>
